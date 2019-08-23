@@ -5,7 +5,8 @@ from telebot import types
 bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
 
 while (1):
-	bot.send_message(chat_id='@saveeyes', text='Сделай упражнение глаз!'),
+	msg = bot.send_message(chat_id='@saveeyes', text='Сделай упражнение глаз!'),
 	time.sleep(7200)
+	bot.delete_message(chat_id='@saveeyes', message_id=msg.message_id)
 
 bot.polling()
