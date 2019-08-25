@@ -6,6 +6,7 @@ from telebot import types
 bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
 
 def add():
+	global msg
 	msg = bot.send_message(chat_id='@saveeyes', text='Пора делать упражнение для глаз!')
 
 def dele():
