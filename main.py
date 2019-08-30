@@ -13,7 +13,7 @@ def dele():
 	bot.delete_message(chat_id='@saveeyes', message_id=msg.message_id)
 	time.sleep(1)
 
-time.sleep(4680)
+time.sleep(4200)
 
 # msg = bot.send_message(chat_id='@saveeyes', text='Пора делать упражнение для глаз!')
 # schedule.every(2).hours.do(dele)
@@ -21,7 +21,7 @@ time.sleep(4680)
 
 while (1):
 	add()
-	time.sleep(7200)
+	time.sleep(10800)
 	dele()
 	# schedule.run_pending();
 	# time.sleep(1)
