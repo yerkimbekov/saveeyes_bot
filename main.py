@@ -1,3 +1,4 @@
+import datetime
 import schedule
 import time
 import telebot
@@ -13,6 +14,7 @@ def dele():
 	bot.delete_message(chat_id='@saveeyes', message_id=msg.message_id)
 	time.sleep(1)
 
+now = datetime.datetime.now()
 tr = 0
 
 while (1):
