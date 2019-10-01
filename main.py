@@ -19,7 +19,7 @@ time.sleep(5700)
 # schedule.every(2).hours.do(dele)
 # schedule.every(2).hours.do(add)
 
-while (1):
+while True:
 	add()
 	time.sleep(10800)
 	dele()
