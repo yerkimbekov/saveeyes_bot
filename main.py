@@ -3,8 +3,9 @@ import time
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
-
+bot = telebot.TeleBot(token = os.environ['BOT_TOKEN']) #You can write it and put BOT_TOKEN in heroku Config vars and write like I wrote (os.envir... ).
+# Also you need to import os
+import os
 def add():
 	global msg
 	msg = bot.send_message(chat_id='@saveeyes', text='Пора делать упражнение для глаз!')
