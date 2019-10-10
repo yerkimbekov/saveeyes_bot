@@ -11,16 +11,33 @@ def add():
 
 def dele():
 	bot.delete_message(chat_id='@saveeyes', message_id=msg.message_id)
-	time.sleep(1)
-
-time.sleep(5820)
 
 msg = bot.send_message(chat_id='@saveeyes', text='Пора делать упражнение для глаз!')
-schedule.every(3).hours.do(dele)
-schedule.every(3).hours.do(add)
+schedule.every().day.at("00:00:00").do(dele)
+schedule.every().day.at("00:00:00").do(add)
+
+schedule.every().day.at("03:00:00").do(dele)
+schedule.every().day.at("03:00:00").do(add)
+
+schedule.every().day.at("06:00:00").do(dele)
+schedule.every().day.at("06:00:00").do(add)
+
+schedule.every().day.at("09:00:00").do(dele)
+schedule.every().day.at("09:00:00").do(add)
+
+schedule.every().day.at("12:00:00").do(dele)
+schedule.every().day.at("12:00:00").do(add)
+
+schedule.every().day.at("15:00:00").do(dele)
+schedule.every().day.at("15:00:00").do(add)
+
+schedule.every().day.at("18:00:00").do(dele)
+schedule.every().day.at("18:00:00").do(add)
+
+schedule.every().day.at("21:00:00").do(dele)
+schedule.every().day.at("21:00:00").do(add)
 
 while (1):
 	schedule.run_pending();
-	time.sleep(1)
 
 bot.polling()
