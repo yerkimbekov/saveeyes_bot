@@ -2,8 +2,10 @@ import schedule
 import time
 import telebot
 from telebot import types
+import os
 
-bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
+bot = telebot.TeleBot(os.environ['BOT_TOKEN'])
+# You can hide your bot token, for that, you need to add a "BOT_TOKEN" value on heroku
 
 def add():
 	global msg
