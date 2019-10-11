@@ -3,7 +3,7 @@ import time
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("haha")
+bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
 
 def add():
 	global msg
@@ -38,6 +38,7 @@ schedule.every().day.at("21:00:00").do(dele)
 schedule.every().day.at("21:00:00").do(add)
 
 while (1):
-	schedule.run_pending();
+	schedule.run_pending()
+	time.sleep(1)
 
 bot.polling()
