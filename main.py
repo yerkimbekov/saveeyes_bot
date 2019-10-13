@@ -3,7 +3,7 @@ import time
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("970640600:AAGbcjHy1cO97SdUDChVkwNNyYU0ueHSttw")
+bot = telebot.TeleBot("hide") // you should hide it 
 
 def add():
 	global msg
