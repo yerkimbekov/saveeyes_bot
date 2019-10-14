@@ -12,22 +12,11 @@ def add():
 def dele():
 	bot.delete_message(chat_id='@saveeyes', message_id=msg.message_id)
 
-schedule.every().day.at("00:00:00").do(dele)
 schedule.every().day.at("00:00:00").do(add)
-
-schedule.every().day.at("09:00:00").do(dele)
 schedule.every().day.at("09:00:00").do(add)
-
-schedule.every().day.at("12:00:00").do(dele)
 schedule.every().day.at("12:00:00").do(add)
-
-schedule.every().day.at("15:00:00").do(dele)
 schedule.every().day.at("15:00:00").do(add)
-
-schedule.every().day.at("18:00:00").do(dele)
 schedule.every().day.at("18:00:00").do(add)
-
-schedule.every().day.at("21:00:00").do(dele)
 schedule.every().day.at("21:00:00").do(add)
 
 while (1):
